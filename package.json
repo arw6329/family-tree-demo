@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "(cd renderer && npm run build) && next build",
     "start": "next start",
     "lint": "next lint",
     "build:worker": "opennextjs-cloudflare",
@@ -13,7 +13,7 @@
     "deploy:worker": "npm run build:worker && wrangler deploy"
   },
   "dependencies": {
-    "@reunionpage/react-family-tree": "^0.1.0",
+    "@reunionpage/react-family-tree": "file:./renderer",
     "next": "15.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

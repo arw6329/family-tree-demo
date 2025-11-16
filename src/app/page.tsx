@@ -9,7 +9,7 @@ export default function Home() {
         <div className={styles.page}>
             <main className={styles.main}>
                 <div className={styles.header}>
-                    <h1 className={styles.h1}>ReunionPage Family Tree Demo</h1>
+                    <h1 className={styles.h1}>ReunionPage Family Tree Demo - Edge Build</h1>
                     <span>See <a href="https://github.com/arw6329/family-tree-renderer">https://github.com/arw6329/family-tree-renderer</a> for more info</span>
                 </div>
                 <FamilyTree database={familyTree} />
